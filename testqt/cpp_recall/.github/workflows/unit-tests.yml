@@ -1,0 +1,30 @@
+name: C++ Unit Tests
+
+on:
+  pull_request:
+    branches: [ main, ai/unittest/ptrs ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ libgtest-dev ninja-build
+          sudo apt-get install -y qtbase5-dev qtbase5-dev-tools # for Qt5
+          sudo apt-get install -y qt6-base-dev qt6-base-dev-tools # for Qt6
+          sudo apt-get install -y libatomic1
+          cd /usr/src/gtest && sudo cmake . && sudo make && sudo cp *.a /usr/lib
+
+      - name: Configure CMake
+        run: cmake -S . -B build -DBUILD_TESTS=ON -DCMAKE_CXX_STANDARD=17 -G Ninja
+
+      - name: Build
+        run: cmake --build build
+
+      - name: Run unit tests
+        run: cd build && ctest --output-on-failure

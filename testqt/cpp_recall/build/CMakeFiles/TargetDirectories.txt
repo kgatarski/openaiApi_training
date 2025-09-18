@@ -1,9 +1,0 @@
-/home/krzysiek/cpp_recall/build/CMakeFiles/cpp_recall.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/edit_cache.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/rebuild_cache.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/list_install_components.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/install.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/install/local.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/install/strip.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/cpp_recall_autogen_timestamp_deps.dir
-/home/krzysiek/cpp_recall/build/CMakeFiles/cpp_recall_autogen.dir

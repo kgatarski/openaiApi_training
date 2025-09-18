@@ -58,6 +58,11 @@ class myunique_ptr {
             return temp;
         }
 
+        friend void swap(myunique_ptr<T>& a, myunique_ptr<T>& b) {
+            std::swap(a.m_ptr, b.m_ptr);
+        }
+
     private:
         T *m_ptr = nullptr;
 };
+

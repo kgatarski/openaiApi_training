@@ -1,3 +1,4 @@
+
 #include <gtest/gtest.h>
 #include "myunique_ptr.h"
 
@@ -26,4 +27,23 @@ TEST(MyUniquePtrTest, Release) {
     EXPECT_EQ(raw->value, 99);
     EXPECT_EQ(ptr.get(), nullptr);
     delete raw;
+}
+
+TEST(MyUniquePtrTest, SwapBasic) {
+    myunique_ptr<Dummy> a(new Dummy(1));
+    myunique_ptr<Dummy> b(new Dummy(2));
+    swap(a, b);
+    ASSERT_NE(a.get(), nullptr);
+    ASSERT_NE(b.get(), nullptr);
+    EXPECT_EQ(a->value, 2);
+    EXPECT_EQ(b->value, 1);
+}
+
+TEST(MyUniquePtrTest, SwapWithNullptr) {
+    myunique_ptr<Dummy> a(new Dummy(123));
+    myunique_ptr<Dummy> b;
+    swap(a, b);
+    EXPECT_EQ(a.get(), nullptr);
+    ASSERT_NE(b.get(), nullptr);
+    EXPECT_EQ(b->value, 123);
 }

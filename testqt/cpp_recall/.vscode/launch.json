@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run cpp_recall",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Desktop_Qt_6_9_1-Debug/cpp_recall",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/build/Desktop_Qt_6_9_1-Debug",
+      "environment": [],
+      "externalConsole": true,
+      "visualizerFile": "/home/krzysiek/.config/Code/User/workspaceStorage/5f27b4415b3a915e11c4b6012e308fd9/tonka3000.qtvsctools/qt.natvis.xml"
+    }
+  ]
+}

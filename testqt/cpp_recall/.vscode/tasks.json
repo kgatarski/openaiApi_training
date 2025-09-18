@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build cpp_recall",
+      "type": "shell",
+      "command": "cmake ../.. && cmake --build .",
+      "options": {
+        "cwd": "${workspaceFolder}/build/Desktop_Qt_6_9_1-Debug"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build and Run cpp_recall",
+      "dependsOn": ["Build cpp_recall"],
+      "type": "shell",
+      "command": "./cpp_recall",
+      "options": {
+        "cwd": "${workspaceFolder}/build/Desktop_Qt_6_9_1-Debug"
+      },
+      "group": "none",
+      "problemMatcher": []
+    }
+  ]
+}

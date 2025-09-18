@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a50697da93ca4f408274.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cpp_recall",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_recall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_recall-Debug-e517a8d6c8dd573bdf3b.json",
+					"name" : "cpp_recall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_recall_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_recall_autogen-Debug-b90fd9036d9675f114b6.json",
+					"name" : "cpp_recall_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_recall_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_recall_autogen_timestamp_deps-Debug-1664d177d5a4f3a87e1e.json",
+					"name" : "cpp_recall_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/krzysiek/cpp_recall/build/Desktop_Qt_6_9_1-Debug",
+		"source" : "/home/krzysiek/cpp_recall"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

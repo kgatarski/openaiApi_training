@@ -21,7 +21,7 @@ class myunique_ptr {
 
         myunique_ptr(myunique_ptr&& other) {
             m_ptr = other.m_ptr;
-            other.m_ptr == nullptr;
+            other.m_ptr = nullptr;
         }
 
         myunique_ptr& operator=(myunique_ptr& copy) = delete;

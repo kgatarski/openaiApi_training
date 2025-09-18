@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_cpp_recall_FILE /home/krzysiek/cpp_recall/build/cpp_recall)
-set(__QT_DEPLOY_TARGET_cpp_recall_TYPE EXECUTABLE)

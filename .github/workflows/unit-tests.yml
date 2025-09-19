@@ -18,13 +18,12 @@ jobs:
           sudo apt-get install -y qtbase5-dev qtbase5-dev-tools # for Qt5
           sudo apt-get install -y qt6-base-dev qt6-base-dev-tools # for Qt6
           sudo apt-get install -y libatomic1
-          cd /usr/src/gtest && sudo cmake . && sudo make && sudo cp *.a /usr/lib
 
       - name: Configure CMake
-        run: cmake -S . -B build -DBUILD_TESTS=ON -DCMAKE_CXX_STANDARD=17 -G Ninja
+        run: cmake -S testqt/cpp_recall -B testqt/cpp_recall/build -DBUILD_TESTS=ON -DCMAKE_CXX_STANDARD=17 -G Ninja
 
       - name: Build
-        run: cmake --build build
+        run: cmake --build testqt/cpp_recall/build
 
       - name: Run unit tests
-        run: cd build && ctest --output-on-failure
+        run: cd testqt/cpp_recall/build && ctest --output-on-failure
